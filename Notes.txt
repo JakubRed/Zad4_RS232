@@ -1,0 +1,7 @@
+RS232:
+
+RAMKA:
+START (stan 0), LSB -> MSB, STOP (stan 11)
+
+W oryginale znak był konwertowany na 2bajty. Znaki ASCII są zapisywane maksymalnie na 8bitach więc jeden bajt
+jest wystarczający. W tym programie została użyta konwersja na 1 bajt.
