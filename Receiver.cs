@@ -82,11 +82,11 @@ namespace Zad4_RS232
                 asciiSign = textInBinary.Substring(i, ONE_BYTE);
                 for (int j = 0; j < ONE_BYTE ; j++)
                 {
-                    if (48 == asciiSign[j])
+                    if (48 == asciiSign[j]) //48 is '0' in ascii (that is lazy method)
                     {
                     dedodedSign += (char)(0 * Math.Pow(2, j));
                     }
-                    else if ((49 == asciiSign[j]))
+                    else if ((49 == asciiSign[j])) //49 is '1' in ascii (that is lazy method)
                     {
                     dedodedSign += (char)(1 * Math.Pow(2, j));
                     }

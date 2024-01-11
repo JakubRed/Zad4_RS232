@@ -15,8 +15,7 @@ namespace Zad4_RS232
             receiver.Show();
         }
         private string ConvertChar(char sign)
-        {//czy dziala?
-            //string charInBinary = "0"; //add start bit (0)
+        {
             string charInBinary = "0";
             int bitCounter = 0;
             while (bitCounter < 8)
@@ -55,7 +54,6 @@ namespace Zad4_RS232
             for (int i = 0; i < inputText.Length; i++)
             {
                 convertedTestInside += ConvertChar(inputText[i]);
-                //TextInBinary.Text = convertedText;
             }
             return convertedTestInside;
         }
@@ -68,7 +66,4 @@ namespace Zad4_RS232
             }
         }
     }
-    //TextInBinary
-    //inputText = Console.ReadLine();
-    //TextInLetters.Text = inputText;
 }
